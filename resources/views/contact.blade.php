@@ -1,3 +1,3 @@
 <div>
-    bagian contact
+    contoh bagian index
 </div>
