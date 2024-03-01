@@ -1,9 +1,9 @@
 <?php
 
+use App\Http\Controllers\Controller;
 use App\Http\Controllers\ListBarangController;
 use Illuminate\Support\Facades\Route;
 Use App\Http\Controllers\HomeController;
-use App\Http\Controllers\login;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,17 +45,22 @@ use App\Http\Controllers\login;
 // }); 
 // route::get('/listbarang/{kode}/{nama}', [ListBarangController::class, 'tampilan']);
 
-// route untuk login
-use App\Http\Controllers\LoginController;
+// // route untuk login
+// use App\Http\Controllers\LoginController;
 
-Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+// Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 
-route::get('/',function(){
-    return view('login');
-});
+// route::get('/',function(){
+//     return view('login');
+// });
 
-Route::post('/login', [LoginController::class, 'processLogin'])->name('login.submit');
+// Route::post('/login', [LoginController::class, 'processLogin'])->name('login.submit');
+
+// // untuk dashbord tapi ini masi coba coba saja
+// route::get('contact', [HomeController::class, 'contact'])->name('dasboard');
 
 
-// untuk dashbord tapi ini masi coba coba saja
-route::get('contact', [HomeController::class, 'contact'])->name('dasboard');
+
+//greyari
+use App\Http\Controllers\greyari;
+Route::get('/praktikum4', [greyari::class, 'tampillan']);
